@@ -2,17 +2,6 @@
 #include <cmath>
 #include "Fixed.hpp"
 
-void show_bits(int *ptr, int nb)
-{
-	int i = 0;
-	while (i < nb)
-	{
-		printf("%d", *ptr >> (nb - i - 1) & 1);
-		i++;
-	}
-	printf("\n");
-}
-
 int main(void)
 {
 	Fixed a;
